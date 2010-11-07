@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+
+  function openAddWindow(tabId, tabLink, tabURL, tabTitle)
+  {	
+	var gwin = window.open("http://www.google.com/reader/link?url="+tabURL+"&title="+encodeURIComponent(tabTitle), "myWindow", "status = 1, height = 300, width = 550, resizable = 1" );
+	//centre it a bit	
+	gwin.moveTo(40, 96);
+  	gwin.focus();
+  }
+
+  // Called when the user clicks on the browser action icon.
+  chrome.browserAction.onClicked.addListener(function(tab) {  
+      openAddWindow(tab.id, "", tab.url, tab.title);
+  });
+</script>
+</head>
+</html>

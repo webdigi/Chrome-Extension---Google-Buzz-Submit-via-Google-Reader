@@ -1,0 +1,17 @@
+{
+  "name": "Submit to Google Buzz!",
+  "version": "1.0",
+  "description": "Share the website you visit to Google Buzz.",
+  "browser_action": {
+    "default_icon": "buzzlogo.png",
+    "default_title": "Submit to Google Buzz!"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "icons": {
+    "128": "128buzz.jpg",
+    "48":  "48buzz.jpg"
+  },
+  "background_page": "background.html"
+}
